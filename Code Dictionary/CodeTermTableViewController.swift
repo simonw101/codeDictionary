@@ -9,10 +9,42 @@ import UIKit
 
 class CodeTermTableViewController: UITableViewController {
     
-    var codeTerms = ["Array", "Boolean", "Int", "String", "Double"]
+    //Array", "Boolean", "Int", "String", "Double"
+    
+    var codeTerms : [Term] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let term1 = Term()
+        term1.name = "Boolean"
+        term1.defination = "A true or false situation"
+        term1.isType = true
+        codeTerms.append(term1)
+        
+        let term2 = Term()
+        term1.name = "Int"
+        term1.defination = "A Whole number"
+        term1.isType = true
+        codeTerms.append(term2)
+        
+        let term3 = Term()
+        term1.name = "if statement"
+        term1.defination = "code which goes one way or another"
+        term1.isType = false
+        codeTerms.append(term3)
+        
+        let term4 = Term()
+        term1.name = "String"
+        term1.defination = "A String"
+        term1.isType = true
+        codeTerms.append(term4)
+        
+        let term5 = Term()
+        term1.name = "Array"
+        term1.defination = "A list of other types"
+        term1.isType = true
+        codeTerms.append(term5)
 
        
     }
@@ -27,9 +59,16 @@ class CodeTermTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
 
-        cell.textLabel?.text = codeTerms[indexPath.row]
+        if codeTerms[indexPath.row].isType {
+            
+            cell.textLabel?.text = codeTerms[indexPath.row].name + " - Type"
+            
+        } else {
+            
+            cell.textLabel?.text = codeTerms[indexPath.row].name
         
-
+        }
+        
         return cell
     }
     
@@ -42,11 +81,17 @@ class CodeTermTableViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        let termVC = segue.destination as! DetaiViewController
         
-        let selectedTerm = sender as! String
         
-        termVC.term = selectedTerm
+        if let termVC = segue.destination as? DetaiViewController {
+        
+            if let selectedTerm = sender as? Term {
+            
+                termVC.term = selectedTerm
+                
+            }
+            
+        }
         
     }
     

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		650625BA2579319E0002846C /* DetaiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650625B92579319E0002846C /* DetaiViewController.swift */; };
+		65347D03257AB52300974779 /* Term.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65347D02257AB52300974779 /* Term.swift */; };
 		659DC84225780F71002F49CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659DC84125780F71002F49CF /* AppDelegate.swift */; };
 		659DC84425780F71002F49CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659DC84325780F71002F49CF /* SceneDelegate.swift */; };
 		659DC84925780F71002F49CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 659DC84725780F71002F49CF /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		650625B92579319E0002846C /* DetaiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetaiViewController.swift; sourceTree = "<group>"; };
+		65347D02257AB52300974779 /* Term.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Term.swift; sourceTree = "<group>"; };
 		659DC83E25780F71002F49CF /* Code Dictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Code Dictionary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		659DC84125780F71002F49CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		659DC84325780F71002F49CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				659DC84C25780F72002F49CF /* LaunchScreen.storyboard */,
 				659DC84F25780F72002F49CF /* Info.plist */,
 				650625B92579319E0002846C /* DetaiViewController.swift */,
+				65347D02257AB52300974779 /* Term.swift */,
 			);
 			path = "Code Dictionary";
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			files = (
 				659DC85825792587002F49CF /* CodeTermTableViewController.swift in Sources */,
 				659DC84225780F71002F49CF /* AppDelegate.swift in Sources */,
+				65347D03257AB52300974779 /* Term.swift in Sources */,
 				650625BA2579319E0002846C /* DetaiViewController.swift in Sources */,
 				659DC84425780F71002F49CF /* SceneDelegate.swift in Sources */,
 			);
